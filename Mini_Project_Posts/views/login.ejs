@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .form-container {
+            width: 500px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 50px rgb(47, 207, 221);
+        }
+        .btn-primary {
+            width: 100%;
+        }
+        .container-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .span{
+            color: blue;
+        }
+        .a{
+            color: black;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body class="bg-dark text-white">
+    <div class="container d-flex align-items-center justify-content-center mt-5 ">
+        <div class="form-container mt-5">
+            <h2 class="text-center mb-4 text-dark">Login Your Account</h2><hr>
+            <form method="post" action="/login">
+                <div class="form-group mt-2">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" >
+                </div>
+                <div class="form-group mt-2">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" >
+                </div><br><br>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <div class="container-button">
+                    <a href="/Signup" class="a">Dont Have an account? <span class="span">Sign up</span></a>
+                 </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+</body>
+</html>
